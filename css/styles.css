@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,500;1,100;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700');
 
 *{
@@ -9,8 +10,8 @@
 	box-sizing: border-box;
 }
 
-body {font-family: 'Roboto', sans-serif; font-size: 16px;color: #717171;font-weight:300;line-height:25px;width: 100%; overflow-x: hidden}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 500; font-family: 'Poppins', sans-serif; color: #717171; color: #eee;}
+body {font-family: 'Roboto mono', sans-serif; font-size: 14px;color: #717171;font-weight:300;line-height:25px;width: 100%; overflow-x: hidden}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 500; font-family: 'Roboto mono', sans-serif; color: #717171; color: #eee;}
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {transition: ease-in-out 0.2s;-webkit-transition: ease-in-out 0.2s;-moz-transition: ease-in-out 0.2s;-ms-transition: ease-in-out 0.2s;-o-transition: ease-in-out 0.2s;}
 section,.section-padding {position: relative;overflow: hidden;}
 .section-top-margin{margin-top: 7.5rem;}
@@ -28,7 +29,7 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 .bg-dark{
 	background-color: #191f3c;
 	background-color: #1d1d1d;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto mono', sans-serif;
 }
 
 .btn{
