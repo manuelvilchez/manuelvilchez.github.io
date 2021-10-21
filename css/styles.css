@@ -1158,7 +1158,7 @@ overflow: auto;
 	}
 	.nosotros, .servicios, .portafolio, .clientes, .blog, .contacto{
 		padding-top: 40px;
-		padding-bottom: 150px;
+		padding-bottom: 180px !important;
 	}
 	.inicio .contenedorBtn{
 		flex-direction: column;
