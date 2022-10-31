@@ -1393,8 +1393,11 @@ overflow: auto;
 		padding-top: 40px;
 		padding-bottom: 130px;
 	}
+	/* .nosotros{
+		padding-bottom: ;
+	} */
 	.nosotros, .servicios, .portafolio, .clientes, .blog, .contacto{
-		padding-top: 40px;
+		padding-top: 130px;
 	}
 	.inicio .contenedorBtn{
 		flex-direction: column;
@@ -1448,6 +1451,11 @@ overflow: auto;
 	.yoProceso .yo .foto{
 		width: 100%;
 		max-width: 100%;
+		justify-content: center;
+		padding: 0;
+	}
+	.proceso h2{
+		text-align: center;
 	}
 
 	.proceso .iconProceso{
@@ -1479,6 +1487,10 @@ overflow: auto;
 		width: 100%;
 		max-width: 100%;
 		flex-direction: column;
+	}
+
+	.servicios .contenedorTitulo{
+		text-align: center !important;
 	}
 	.servicios .descripcion{
 		order: 1;
