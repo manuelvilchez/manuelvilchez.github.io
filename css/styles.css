@@ -1391,6 +1391,7 @@ overflow: auto;
 	.inicio{
 		flex-direction: column;
 		padding-top: 40px;
+		padding-bottom: 80px;
 	}
 	.nosotros, .servicios, .portafolio, .clientes, .blog, .contacto{
 		padding-top: 40px;
@@ -1411,11 +1412,13 @@ overflow: auto;
 	.frase h1{
 		font-size: 2em;
 		padding: 0px;
+		text-align: center !important;
 	}
 	.contenedorTexto .texto{
 		padding: 0px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		
 	}
 	.inicio .img img{
 		padding: 0px;
