@@ -1397,7 +1397,8 @@ overflow: auto;
 		padding-bottom: ;
 	} */
 	.nosotros, .servicios, .portafolio, .clientes, .blog, .contacto{
-		padding-top: 130px;
+		padding-top: 40px;
+		padding-bottom: 130px;
 	}
 	.inicio .contenedorBtn{
 		flex-direction: column;
