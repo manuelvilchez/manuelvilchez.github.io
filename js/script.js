@@ -98,10 +98,10 @@ function paginaActivada(){
 function setCurrentMenuItem(){
 	var activePageId = $('.pt-page-visible').attr('id');	
 	if (activePageId=='inicio') {
-		$('.enlaces a').parent().removeClass('active')
+		$('.enlaces a').parent().removeClass('activeMenu')
 		return
 	}
-	$('.enlaces a[href$=' + activePageId +']').parent().addClass('active').siblings().removeClass('active');
+	$('.enlaces a[href$=' + activePageId +']').parent().addClass('activeMenu').siblings().removeClass('activeMenu');
 }
 
 
