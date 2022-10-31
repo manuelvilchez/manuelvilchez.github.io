@@ -1391,7 +1391,7 @@ overflow: auto;
 	.inicio{
 		flex-direction: column;
 		padding-top: 40px;
-		padding-bottom: 80px;
+		padding-bottom: 130px;
 	}
 	.nosotros, .servicios, .portafolio, .clientes, .blog, .contacto{
 		padding-top: 40px;
