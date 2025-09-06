@@ -1116,7 +1116,7 @@ overflow: auto;
 	/*Servicios*/
 	.servicios{
 		flex-direction: column;
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 	}
 	.servicios .contenedorSoluciones{
 		order: 2;
@@ -1157,6 +1157,9 @@ overflow: auto;
 	/*fin clientes*/
 
 	/*portafolio*/
+	.portafolio{
+		margin-bottom: 60px;
+	}
 	.contenedorItem .item{
 		height: 350px;
 	}
