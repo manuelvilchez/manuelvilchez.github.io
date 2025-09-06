@@ -1012,6 +1012,10 @@ overflow: auto;
 		right: 45px;
 		bottom: 60px;
 	}
+	.enlaceWhatsapp a{
+		margin-left:45px !important;
+		height:35px !important;
+	}
 	.nav .enlaces li a i{
 		margin-right: 0px;
 		font-size: 1.2em;
@@ -1112,6 +1116,7 @@ overflow: auto;
 	/*Servicios*/
 	.servicios{
 		flex-direction: column;
+		margin-bottom: 50px;
 	}
 	.servicios .contenedorSoluciones{
 		order: 2;
