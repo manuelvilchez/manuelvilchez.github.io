@@ -368,36 +368,30 @@
     });
 	</script>
 	<script>
-const themeLink = document.getElementById("themeStylesheet");
+		const themeLink = document.getElementById("themeStylesheet");
 const toggleInput = document.getElementById("toggleTheme");
 
-// Función para forzar recarga con cache-buster
-function setTheme(file) {
-  const version = Date.now(); // número único cada vez
-  themeLink.setAttribute("href", `${file}?v=${version}`);
-  localStorage.setItem("theme", file); // guardamos sin el cache-buster
-}
-
-// Si no hay un tema guardado, usar light.css
+// Si no hay un tema guardado, establecemos el claro por defecto
 if (!localStorage.getItem("theme")) {
   localStorage.setItem("theme", "css/light.css");
 }
 
-// Aplicar tema guardado con cache-buster
-setTheme(localStorage.getItem("theme"));
+// Aplicar el tema guardado
+themeLink.href = localStorage.getItem("theme");
 
-// Ajustar toggle
-toggleInput.checked = localStorage.getItem("theme") === "css/dark.css";
+// Marcar el toggle según el tema
+toggleInput.checked = themeLink.href.includes("dark.css");
 
-// Cambiar tema al usar el toggle
+// Cambiar tema al hacer click
 toggleInput.addEventListener("change", () => {
   if (toggleInput.checked) {
-    setTheme("css/dark.css");
+    themeLink.href = "css/dark.css";
+    localStorage.setItem("theme", "css/dark.css");
   } else {
-    setTheme("css/light.css");
+    themeLink.href = "css/light.css";
+    localStorage.setItem("theme", "css/light.css");
   }
 });
-
 
 	</script>
 </body>
