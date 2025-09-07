@@ -17,7 +17,9 @@
     <meta property="og:url" content="https://nightcod.com" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/bundle.min.css"> -->
 	<!-- <link href="css/LineIcons.min.css" rel="stylesheet"> -->
-	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+	<!-- <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet"> -->
+<!-- <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css"> -->
+<link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css">
 
 
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
@@ -149,7 +151,7 @@
 						<div>
 							<div class="item">
 								<div>
-									<i class="lni lni-code-alt"></i>
+									<i class="lni lni-monitor-code"></i>
 									<h3>Software a medida</h3>
 								</div>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -166,7 +168,7 @@
 						
 							<div class="item">
 								<div>
-									<i class="lni lni-code-alt"></i>
+									<i class="lni lni-phone"></i>
 									<h3>Aplicaciones móviles</h3>
 								</div>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -184,7 +186,7 @@
 						<div>
 							<div class="item">
 								<div>
-									<i class="lni lni-code-alt"></i>
+									<i class="lni lni-cloud-iot-2"></i>
 									<h3>Automatización de procesos</h3>
 								</div>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -366,30 +368,36 @@
     });
 	</script>
 	<script>
-		const themeLink = document.getElementById("themeStylesheet");
+const themeLink = document.getElementById("themeStylesheet");
 const toggleInput = document.getElementById("toggleTheme");
 
-// Si no hay un tema guardado, establecemos el claro por defecto
+// Función para forzar recarga con cache-buster
+function setTheme(file) {
+  const version = Date.now(); // número único cada vez
+  themeLink.setAttribute("href", `${file}?v=${version}`);
+  localStorage.setItem("theme", file); // guardamos sin el cache-buster
+}
+
+// Si no hay un tema guardado, usar light.css
 if (!localStorage.getItem("theme")) {
   localStorage.setItem("theme", "css/light.css");
 }
 
-// Aplicar el tema guardado
-themeLink.href = localStorage.getItem("theme");
+// Aplicar tema guardado con cache-buster
+setTheme(localStorage.getItem("theme"));
 
-// Marcar el toggle según el tema
-toggleInput.checked = themeLink.href.includes("dark.css");
+// Ajustar toggle
+toggleInput.checked = localStorage.getItem("theme") === "css/dark.css";
 
-// Cambiar tema al hacer click
+// Cambiar tema al usar el toggle
 toggleInput.addEventListener("change", () => {
   if (toggleInput.checked) {
-    themeLink.href = "css/dark.css";
-    localStorage.setItem("theme", "css/dark.css");
+    setTheme("css/dark.css");
   } else {
-    themeLink.href = "css/light.css";
-    localStorage.setItem("theme", "css/light.css");
+    setTheme("css/light.css");
   }
 });
+
 
 	</script>
 </body>
