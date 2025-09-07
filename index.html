@@ -11,10 +11,10 @@
 	<meta name="robots" content="all">
 
 
-	 <meta property="og:title" content="CodeeWild || Diseño y Desarrollo Web" />
-    <meta property="og:description" content="CodeeWild | Desarrollo de Software | Sistemas Web | piura" />
+	 <meta property="og:title" content="NightCod || Software & Automatización" />
+    <meta property="og:description" content="NightCod | Software & Automatización | Desarrollo de software | sistemas web | piura" />
     <meta property="og:image" content="" />      
-    <meta property="og:url" content="https://codeewild.com" />
+    <meta property="og:url" content="https://nightcod.com" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/bundle.min.css"> -->
 	<!-- <link href="css/LineIcons.min.css" rel="stylesheet"> -->
 	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
@@ -25,7 +25,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
 	
-	<link rel="stylesheet" type="text/css" href="css/styles.css?005">
+	<!-- <link rel="stylesheet" type="text/css" href="css/dark.css?005"> -->
+	<link id="themeStylesheet" rel="stylesheet" type="text/css" href="css/light.css?005">
 
 	<script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -43,6 +44,8 @@
 
 </head>
 <body class="bg-dark">
+	  
+
 	<ul class="redesSociales">
 			<div class="linea"><span></span></div>
 				<li><a target="_blank" href="https://www.facebook.com/codeewild"><i class="lni lni-facebook"></i></a></li>
@@ -53,7 +56,7 @@
 	<header class="header">
 		<div class="logos">
 			<a class="logo enlacePagina" href="#/inicio" style="display: flex;">
-				<span style="color: #000000">Night</span><span>Cod</span>
+				<span style="color: #00000d">Night</span><span>Cod</span>
 			</a>			
 		</div>
 		
@@ -109,7 +112,9 @@
 	</header>
 
 	<main id="main" class="paginas ">
-		
+	
+		  <!-- <button id="toggleTheme">Cambiar tema</button> -->
+
 			<section id="inicio" class="pt-page pt-page-visible">
 				<div class="content inicio" >
 					<div class="contenedorTexto">
@@ -245,7 +250,7 @@
 							<div class="textos">
 								<p class="text-verde">Sitio web administrable</p>
 								<h3><a target="_blank" href="https://www.solexpresscourier.com/"><i class="lni lni-link iconItem"></i> SolExpress</a></h3>
-								<p class="descripcionItem">Sitio web, con 4 paginas con opcion a cambiar texto e imagenes desde un panel administrativo</p>
+								<p class="descripcionItem">Sitio web, con 4 páginas con opción a cambiar texto e imágenes desde un panel administrativo</p>
 								<!-- <p class="tecnologias"><span>Html</span><span>js</span> <span>css</span><span>mysql</span><span>Php</span></p> -->
 								
 							</div>
@@ -256,9 +261,9 @@
 								<img src="img/portafolio/jugueteriaplay.jpg">
 							</div>
 							<div class="textos orderUno">
-								<p class="text-verde">Catalogo Online</p>
+								<p class="text-verde">Catálogo Online</p>
 								<h3><a target="_blank" href="https://jugueteriaplay.com/radio-control"><i class="lni lni-link iconItem"></i> Jugueteria Play</a></h3>
-								<p class="descripcionItem">Catalogo Online para el rubro jugueteria, con un sistema administrable que lleva el control de entra y salida del producto, stock, ofertas ...</p>
+								<p class="descripcionItem">Catálogo Online para el rubro jugueteria, con un sistema administrable que lleva el control de entrada y salida del producto, stock, ofertas ...</p>
 								<!-- <p class="tecnologias"><span>Html</span><span>js</span> <span>css</span> <span>php</span><span>Mysql</span></p> -->
 								
 							</div>
@@ -297,7 +302,10 @@
             	</div>
             </section>
 	</main>
-
+	<div class="theme-toggle">
+    <input type="checkbox" id="toggleTheme">
+    <label for="toggleTheme"></label>
+  </div>
 	<!-- <script src="js/jquery.min.js"></script> -->
 	
 
@@ -356,6 +364,33 @@
             },
         }
     });
+	</script>
+	<script>
+		const themeLink = document.getElementById("themeStylesheet");
+const toggleInput = document.getElementById("toggleTheme");
+
+// Si no hay un tema guardado, establecemos el claro por defecto
+if (!localStorage.getItem("theme")) {
+  localStorage.setItem("theme", "css/light.css");
+}
+
+// Aplicar el tema guardado
+themeLink.href = localStorage.getItem("theme");
+
+// Marcar el toggle según el tema
+toggleInput.checked = themeLink.href.includes("dark.css");
+
+// Cambiar tema al hacer click
+toggleInput.addEventListener("change", () => {
+  if (toggleInput.checked) {
+    themeLink.href = "css/dark.css";
+    localStorage.setItem("theme", "css/dark.css");
+  } else {
+    themeLink.href = "css/light.css";
+    localStorage.setItem("theme", "css/light.css");
+  }
+});
+
 	</script>
 </body>
 </html>
