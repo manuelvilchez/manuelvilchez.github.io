@@ -563,7 +563,7 @@ overflow: auto;
 	border: 1px solid #2e34402b;
 	/* border: 1px solid #3873ff; */
 	/* background-color: #6d6b8326; */
-	background-color: #d7d8df75;
+	background-color: #d7d8df9c;
 }
 .servicios .contenedorSoluciones .item div{
 	display: flex;
@@ -669,7 +669,7 @@ overflow: auto;
 
 .contenedorItem .item{
 	position: relative;
-	background-color: #d7d8df75;
+	background-color: #d7d8df9c;
 	width: 90%;
 	height: 300px;
 	overflow: hidden;
@@ -1248,6 +1248,9 @@ overflow: auto;
 		height: 350px;
 	}
 	/*portafolio*/
+	.contacto .texto{
+	width: 70%;
+	}
 }
 
 @media (min-width: 767px) and (max-width:1000px ){
