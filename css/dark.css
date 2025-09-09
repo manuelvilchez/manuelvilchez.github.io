@@ -620,7 +620,9 @@ overflow: auto;
 .servicios .contenedorSoluciones .item p{
 	transition: .5s ease all;
 	text-align: left;
-	color: rgb(238, 238, 238);
+	/* color: rgb(238, 238, 238); */
+	color: #717171;
+	
 	/* color: darkgray; */
 }
 .servicios .contenedorSoluciones .item:hover p{
@@ -697,7 +699,7 @@ overflow: auto;
 	margin-right: -100px !important;
 	margin-left: 0 !important;
 	z-index: 1111;
-	color: white !important;
+	color: #717171 !important;
 
 }
 .contenedorItem .item .orderUno{
@@ -729,7 +731,8 @@ overflow: auto;
 
 .contenedorItem .item .textos .descripcionItem{
 	/* background-color: #d7d8df; */
-	color: #a8b2d1;
+	/* color: #a8b2d1; */
+	color: #717171 !important;
 	margin: 20px 0;
 	/* margin-left: -100px; */
 	padding: 12px;
