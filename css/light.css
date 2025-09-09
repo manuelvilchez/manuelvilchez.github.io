@@ -273,8 +273,8 @@ overflow: auto;
 	width: 80%;	
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 20px;
-	height: 60px;
+	margin-bottom: 10px;
+	height: 50px;
 	/* background-color: #d7d8df; */
 	background: white;
 	/* list-style: none !important;  */
@@ -321,7 +321,7 @@ overflow: auto;
 	/*background-color: #191f3c;*/
 	color: #00000d;;
 	font-weight: 550;
-	font-size: 35px;
+	font-size: 28px;
 }
 .enlaceWhatsapp{
 	width: 10%;
@@ -340,8 +340,11 @@ overflow: auto;
  	display: flex;
 	align-items: center;
 }
+ .enlaceWhatsapp li i{
+	color: green;
+ }
  .enlaceWhatsapp li a{
- 	background-color: green;
+ 	/* background-color: green; */
  	border-radius: 50%;
  	/* padding: 8px; */
 	height: 100%;
