@@ -273,14 +273,9 @@ overflow: auto;
 	margin-right: 10%;
 	margin-bottom: 20px;
 	height: 60px;
-	/*background-color: #020f20;*/
-	/* background-color: #191f3c; */
-	/* background-color: #181818; */
-	/* background-color: #ebebeb; */
-	/* background-color: #c9ccdf; */
-	background-color: #2e3440;
+	/* background-color: #2e3440; */
+	background-color: white;
 	/* list-style: none !important;  */
-	/*background-color: #eaf0eb;*/
 	/*color: #717171;*/
 	/*color: #2d2b4d;*/
 	color: #51587f;
@@ -367,7 +362,7 @@ overflow: auto;
 	cursor: pointer;
 	height: 50px;
 	flex-grow: 1;
-	color: #00000d	;
+	/* color: #00000d	; */
 	font-weight: 500;
 }
 .nav .enlaces li a{
