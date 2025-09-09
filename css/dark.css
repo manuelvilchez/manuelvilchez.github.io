@@ -558,7 +558,8 @@ overflow: auto;
 	/* border: 1px solid #3873ff; */
 	/* border: 1px solid #3873ff; */
 	/* background-color: #6d6b8326; */
-	background-color: #171e2b;
+	/* background-color: #171e2b; */
+	background-color: #11141ae5;
 	border:1px solid #2e3440;
 }
 .servicios .contenedorSoluciones .item div{
@@ -675,7 +676,8 @@ overflow: auto;
 	justify-content: space-around;
 	align-items: center;
 	margin: 50px 0px;
-	background-color: #171e2b;
+	/* background-color: #171e2b; */
+	background-color: #11141ae5;
 	border:1px solid #2e3440;
 	border-radius: 20px;
 	color: white !important;
