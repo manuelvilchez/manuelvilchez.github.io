@@ -135,6 +135,7 @@
 						<img src="img/web.svg">
 					</div>
 				</div>
+				
 			</section>
 
 			
@@ -372,7 +373,7 @@ const toggleInput = document.getElementById("toggleTheme");
 
 // Si no hay un tema guardado, establecemos el claro por defecto
 if (!localStorage.getItem("theme")) {
-  localStorage.setItem("theme", "css/light.css?003");
+  localStorage.setItem("theme", "css/light.css?004");
 }
 
 // Aplicar el tema guardado
@@ -384,11 +385,11 @@ toggleInput.checked = themeLink.href.includes("dark.css");
 // Cambiar tema al hacer click
 toggleInput.addEventListener("change", () => {
   if (toggleInput.checked) {
-    themeLink.href = "css/dark.css?003";
-    localStorage.setItem("theme", "css/dark.css?003");
+    themeLink.href = "css/dark.css?004";
+    localStorage.setItem("theme", "css/dark.css?004");
   } else {
-    themeLink.href = "css/light.css?003";
-    localStorage.setItem("theme", "css/light.css?003");
+    themeLink.href = "css/light.css?004";
+    localStorage.setItem("theme", "css/light.css?004");
   }
 });
 
