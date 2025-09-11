@@ -372,7 +372,7 @@ const toggleInput = document.getElementById("toggleTheme");
 
 // Si no hay un tema guardado, establecemos el claro por defecto
 if (!localStorage.getItem("theme")) {
-  localStorage.setItem("theme", "css/light.css?001");
+  localStorage.setItem("theme", "css/light.css?002");
 }
 
 // Aplicar el tema guardado
@@ -384,11 +384,11 @@ toggleInput.checked = themeLink.href.includes("dark.css");
 // Cambiar tema al hacer click
 toggleInput.addEventListener("change", () => {
   if (toggleInput.checked) {
-    themeLink.href = "css/dark.css?001";
-    localStorage.setItem("theme", "css/dark.css?001");
+    themeLink.href = "css/dark.css?002";
+    localStorage.setItem("theme", "css/dark.css?002");
   } else {
-    themeLink.href = "css/light.css?001";
-    localStorage.setItem("theme", "css/light.css?001");
+    themeLink.href = "css/light.css?002";
+    localStorage.setItem("theme", "css/light.css?002");
   }
 });
 
