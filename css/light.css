@@ -114,7 +114,7 @@ color: #0b1220;
 .btnSecundaryBorder:hover{
 	/* background-color:#91a3b3a8; */
 	background-color:#3873ff;
-	color: #3873ff; 
+	color: white;
 }
 .btnSecundaryBorder{
 	border:1px solid #3873ff;
@@ -483,7 +483,7 @@ overflow: auto;
 .inicio .img img{
 	padding-left: 20px;
 	padding-top: 20px;
-	width: 500px;
+	width: 100%;
 	height: auto;
 }
 .contenedorBtn{
@@ -739,7 +739,7 @@ overflow: auto;
 	color: #a8b2d1;
 	margin: 20px 0;
 	/* margin-left: -100px; */
-	padding: 12px;
+	/* padding: 12px; */
 }
 
 .contenedorItem .item .textos .tecnologias{
@@ -1273,6 +1273,7 @@ overflow: auto;
 		max-width: 100%;
 		padding: 10px;
 		padding-bottom: 20px;
+		text-align: left !important;
 	}
 
 	.contenedorItem .item .textos .descripcionItem{
@@ -1375,6 +1376,37 @@ overflow: auto;
 		max-width: 100%;
 	}
 	/*Fin Servicios*/
+
+	.contenedorItem .item{
+		/* height: 350px; */
+		height: auto !important;
+		margin: 30px 1px;
+		display: inline-block;
+	}
+
+	.contenedorItem .item .textos{
+		width: 100%;
+		max-width: 100%;
+		padding: 10px;
+		padding-bottom: 20px;
+		text-align: left !important;
+	}
+
+	.contenedorItem .item .textos .descripcionItem{
+		margin: 0;
+		padding: 0;
+		margin-top: 8px !important;
+	}
+	.contenedorItem .item .img{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.contenedorItem .item .orderUno .descripcionItem{
+		margin-right: 0 !important;
+
+	}
+
 
 	/*clientes*/
 	.clientes>div{

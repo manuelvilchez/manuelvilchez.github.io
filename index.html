@@ -250,7 +250,7 @@
 							</div>
 							<div class="textos">
 								<p class="text-verde">Sitio web administrable</p>
-								<h3><a target="_blank" href="https://www.solexpresscourier.com/"><i class="lni lni-link iconItem"></i> SolExpress</a></h3>
+								<h3><a target="_blank" href="https://www.solexpresscourier.com/"><i class="lni lni-link-2-angular-right"></i></i> SolExpress</a></h3>
 								<p class="descripcionItem">Sitio web, con 4 páginas con opción a cambiar texto e imágenes desde un panel administrativo</p>
 								<!-- <p class="tecnologias"><span>Html</span><span>js</span> <span>css</span><span>mysql</span><span>Php</span></p> -->
 								
@@ -263,7 +263,7 @@
 							</div>
 							<div class="textos orderUno">
 								<p class="text-verde">Catálogo Online</p>
-								<h3><a target="_blank" href="https://jugueteriaplay.com/radio-control"><i class="lni lni-link iconItem"></i> Juguetería Play</a></h3>
+								<h3><a target="_blank" href="https://jugueteriaplay.com/radio-control"><i class="lni lni-link-2-angular-right"></i></i> Juguetería Play</a></h3>
 								<p class="descripcionItem">Catálogo Online para el rubro jugueteria, con un sistema administrable que lleva el control de entrada y salida del producto, stock, ofertas ...</p>
 								<!-- <p class="tecnologias"><span>Html</span><span>js</span> <span>css</span> <span>php</span><span>Mysql</span></p> -->
 								
@@ -372,7 +372,7 @@ const toggleInput = document.getElementById("toggleTheme");
 
 // Si no hay un tema guardado, establecemos el claro por defecto
 if (!localStorage.getItem("theme")) {
-  localStorage.setItem("theme", "css/light.css?002");
+  localStorage.setItem("theme", "css/light.css?003");
 }
 
 // Aplicar el tema guardado
@@ -384,11 +384,11 @@ toggleInput.checked = themeLink.href.includes("dark.css");
 // Cambiar tema al hacer click
 toggleInput.addEventListener("change", () => {
   if (toggleInput.checked) {
-    themeLink.href = "css/dark.css?002";
-    localStorage.setItem("theme", "css/dark.css?002");
+    themeLink.href = "css/dark.css?003";
+    localStorage.setItem("theme", "css/dark.css?003");
   } else {
-    themeLink.href = "css/light.css?002";
-    localStorage.setItem("theme", "css/light.css?002");
+    themeLink.href = "css/light.css?003";
+    localStorage.setItem("theme", "css/light.css?003");
   }
 });
 
